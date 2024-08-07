@@ -1,0 +1,17 @@
+#maindiv{
+  height: 100%;
+  width: 65%;
+  background-color: hsl(226, 43%, 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+@media screen and (max-width: 375px) {
+  #maindiv{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

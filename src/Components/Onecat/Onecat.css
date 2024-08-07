@@ -1,0 +1,119 @@
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(../../assets/static/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Light;
+    src: url(../../assets/static/Rubik-Light.ttf);
+}
+
+
+.maincat{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+
+}
+
+.upper{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: end;
+   box-sizing: border-box;
+   padding-right: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.catlogo{
+  height: 150%;
+}
+
+.lower{
+    width: 100%;
+    height: 80%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    color: white;
+    font-family: Rubik-Regular;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.lower:hover{
+    background-color: hsl(234, 30%, 36%);
+}
+
+.dots{
+    color: rgb(210, 206, 206);
+}
+
+.dots:hover{
+    cursor: pointer;
+}
+
+.uplower{
+    width: 100%;
+    display: flex;
+}
+
+.lowlower{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.catname{
+    width: 100%;
+}
+
+.catduration{
+    font-family: Rubik-Light;
+    font-size: 36px;
+}
+
+.catdate{
+    font-size: 9px;
+    color: rgb(175, 170, 170);
+}
+
+@media screen and (max-width: 375px) {
+  .lowlower{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .maincat{
+    height: 15.5%;
+  }
+
+  .catduration{
+    font-size: 18px;
+}
+
+.catname{
+    font-size: 12px;
+}
+
+.catdate{
+    font-size: 12px;
+}
+
+.upper{
+    height: 22%;
+}
+
+.lower{
+    height: 78%;
+}
+}
